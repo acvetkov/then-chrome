@@ -1,6 +1,6 @@
 {
-  "name": "chromise",
-  "version": "0.0.1",
+  "name": "q-chrome",
+  "version": "0.0.2",
   "description": "Promise wrapper for chrome api",
   "main": "out/index.js",
   "directories": {
