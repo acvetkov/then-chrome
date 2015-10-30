@@ -31,7 +31,7 @@ Sycn methods are wrapped too
 var chromeApi = require('then-chrome');
 
 chromeApi.i18n.getMessage('title')
-   then(console.log); // 'extension title'
+   .then(console.log); // 'extension title'
 ```
 
 ### install
