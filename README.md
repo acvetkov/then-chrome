@@ -5,6 +5,34 @@
 
 Promise-based [chrome api](https://developer.chrome.com/extensions/api_index#stable_apis).
 
+### usage
+
+```js
+var chromeApi = require('then-chrome');
+
+// get tans list
+chromeApi.tabs.query({currentWindow: true})
+   .then(console.log); // tabs list
+
+// get all cookies by name   
+chromeApi.cookies.getAll({name: 'cookieName'})
+   .then(console.log); // cookie list
+   
+// detect language by tab
+chromeApi.tabs.detectLanguage(10)
+   .then(console.log); // en
+   .catch(console.warn); // catch chrome.runtime.lastError value
+```
+
+Sycn methods are wrapped too
+
+```js
+var chromeApi = require('then-chrome');
+
+chromeApi.i18n.getMessage('title')
+   then(console.log); // 'extension title'
+```
+
 ### install
 
 ```bash
@@ -28,7 +56,7 @@ npm run build
 ### test
 
 ```bash
-npm run test
+npm test
 ```
 
 ## Supported methods
