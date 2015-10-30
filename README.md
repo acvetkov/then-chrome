@@ -1,7 +1,7 @@
-## q-chrome
+## then-chrome
 
-[![Build Status](https://travis-ci.org/acvetkov/q-chrome.svg?branch=master)](https://travis-ci.org/acvetkov/q-chrome)
-[![npm version](https://badge.fury.io/js/q-chrome.svg)](https://www.npmjs.com/package/q-chrome)
+[![Build Status](https://travis-ci.org/acvetkov/then-chrome.svg?branch=master)](https://travis-ci.org/acvetkov/then-chrome)
+[![npm version](https://badge.fury.io/js/then-chrome.svg)](https://www.npmjs.com/package/then-chrome)
 
 Promise-based [chrome api](https://developer.chrome.com/extensions/api_index#stable_apis).
 
@@ -36,14 +36,14 @@ chromeApi.i18n.getMessage('title')
 ### install
 
 ```bash
-npm install q-chrome
+npm install then-chrome
 ```
 
 or
 
 ```bash
-git clone https://github.com/acvetkov/q-chrome.git
-cd q-chrome
+git clone https://github.com/acvetkov/then-chrome.git
+cd then-chrome
 npm install
 ```
 

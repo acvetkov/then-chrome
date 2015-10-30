@@ -1,6 +1,6 @@
 {
-  "name": "q-chrome",
-  "version": "0.0.3",
+  "name": "then-chrome",
+  "version": "0.0.4",
   "description": "Promise wrapper for chrome api",
   "main": "out/index.js",
   "directories": {
@@ -16,7 +16,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com:acvetkov/q-chrome.git"
+    "url": "git@github.com:acvetkov/then-chrome.git"
   },
   "keywords": [
     "chrome",
