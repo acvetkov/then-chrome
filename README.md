@@ -11,7 +11,7 @@ npm install q-chrome
 or
 
 ```bash
-git clone git@github.com:desktop/q-chrome.git
+git clone https://github.com/acvetkov/q-chrome.git
 cd q-chrome
 npm install
 ```
