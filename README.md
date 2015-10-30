@@ -1,5 +1,8 @@
 ## q-chrome
 
+[![Build Status](https://travis-ci.org/acvetkov/q-chrome.svg?branch=master)](https://travis-ci.org/acvetkov/q-chrome)
+[![npm version](https://badge.fury.io/js/q-chrome.svg)](https://www.npmjs.com/package/q-chrome)
+
 Promise-based [chrome api](https://developer.chrome.com/extensions/api_index#stable_apis).
 
 ### install
