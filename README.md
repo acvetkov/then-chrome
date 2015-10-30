@@ -10,7 +10,7 @@ Promise-based [chrome api](https://developer.chrome.com/extensions/api_index#sta
 ```js
 var chromeApi = require('then-chrome');
 
-// get tans list
+// get tabs list
 chromeApi.tabs.query({currentWindow: true})
    .then(console.log); // tabs list
 
