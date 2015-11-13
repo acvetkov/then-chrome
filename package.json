@@ -1,6 +1,6 @@
 {
   "name": "then-chrome",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "Promise wrapper for chrome api",
   "main": "out/index.js",
   "directories": {
@@ -42,6 +42,6 @@
     "jscs": "^2.2.1",
     "mocha": "^2.3.3",
     "sinon": "^1.17.2",
-    "sinon-chrome": "^0.2.1"
+    "sinon-chrome": "^1.0"
   }
 }
