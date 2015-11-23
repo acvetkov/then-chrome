@@ -78,11 +78,13 @@ function getResolver(defer) {
  */
 function wrapSync(namespace, method) {
     return (...args) => {
-        try {
-            return Q.resolve(Function.prototype.apply.call(chrome[namespace][method], chrome[namespace], args));
-        } catch (e) {
-            return Q.reject(e);
-        }
+        return new Q.Promise((resolve, reject) => {
+            try {
+                return resolve(Function.prototype.apply.call(chrome[namespace][method], chrome[namespace], args));
+            } catch (e) {
+                return reject(e);
+            }
+        });
     };
 }
 
