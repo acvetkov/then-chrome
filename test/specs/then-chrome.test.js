@@ -5,7 +5,7 @@
 
 import _ from 'lodash';
 import chromeApi from '../src/index';
-import config from '../src/config';
+import config from '../../src/config';
 
 describe('chromeApi', function () {
     _.forEach(config, (data, namespace) => {
