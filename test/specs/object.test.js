@@ -3,13 +3,13 @@
  * @overview
  */
 
-import {get, set} from '../src/object';
+import {get, set} from '../../src/object';
 
 describe('object', function () {
 
     describe('set', function () {
 
-        it('should correct set on empty object', function () {
+        it('should correct set on empty object', () => {
             assert.deepEqual(set({}, 'a'), {
                 a: {}
             });
@@ -23,8 +23,8 @@ describe('object', function () {
             });
         });
 
-        it('should correct set on non-empty object', function () {
-            var data = {
+        it('should correct set on non-empty object', () => {
+            const data = {
                 a: {},
                 b: {
                     c: {}
@@ -64,10 +64,10 @@ describe('object', function () {
         });
     });
 
-    describe('get', function () {
+    describe('get', () => {
 
-        it('should get correct object', function () {
-            var data = {
+        it('should get correct object', () => {
+            const data = {
                 a: {
                     b: {},
                     d: {
