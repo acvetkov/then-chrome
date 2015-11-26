@@ -15,6 +15,7 @@
     "no-param-reassign": 0
   },
   "globals": {
+    "assert": false,
     "it": false,
     "before": false,
     "after": false,

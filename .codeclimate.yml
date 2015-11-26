@@ -1,0 +1,9 @@
+engines:
+  fixme:
+    enabled: true
+  eslint:
+    enabled: true
+
+exclude_paths:
+  - "**.md"
+  - "LICENSE"
