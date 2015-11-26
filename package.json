@@ -36,11 +36,9 @@
     "eslint": "^1.7.3",
     "eslint-config-airbnb": "^0.1.0",
     "eslint-plugin-react": "^3.6.3",
-    "install": "^0.2.2",
     "jscs": "^2.2.1",
     "lodash": "^3.10.1",
     "mocha": "^2.3.3",
-    "q": "^1.4.1",
     "sinon": "^1.17.2",
     "sinon-chrome": "^1.0.2"
   }
