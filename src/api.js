@@ -9,12 +9,16 @@ import config from './config';
 import {wrapAsyncMethods, wrapSyncMethods} from './wrapper';
 import {get, set} from './object';
 
-export default function create(Promise) {
+/**
+ * @param {Function} Thenable
+ * @returns {ThenChrome}
+ */
+export default function create(Thenable) {
     return Object.keys(config).reduce((result, namespace) => {
         createNamespace(result, namespace);
-        return wrapMethods(result, namespace, config[namespace], Promise);
+        return wrapMethods(result, namespace, config[namespace], Thenable);
     }, {});
-};
+}
 
 /**
  * Create namespace
@@ -29,7 +33,6 @@ function createNamespace(obj, namespace) {
     }
     return obj;
 }
-
 
 /**
  * @param {Object} obj

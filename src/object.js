@@ -12,7 +12,7 @@
  * @param {String} [delimiter]
  * @returns {Object|Null}
  */
-export function get (object, path, delimiter = '.') {
+export function get(object, path, delimiter = '.') {
     var [...keys] = path.split(delimiter);
     var data = object;
 
@@ -33,7 +33,7 @@ export function get (object, path, delimiter = '.') {
  * @param {String} [delimiter]
  * @returns {*}
  */
-export function set (obj, path, delimiter = '.') {
+export function set(obj, path, delimiter = '.') {
     return createNestedObject(obj, path.split(delimiter));
 }
 

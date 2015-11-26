@@ -5,20 +5,28 @@
 
 'use strict';
 
-import chromeApi from './api';
+import create from './api';
 
-let PromiseConstructor;
+const Thenable = getNativePromise();
 
-if (typeof window !== 'undefined') {
-    PromiseConstructor = window.Promise;
+/**
+ * Get native promise constructor
+ * @returns {*}
+ */
+function getNativePromise() {
+    if (typeof window !== 'undefined' && window.Promise) {
+        return window.Promise;
+    }
+    if (typeof global !== 'undefined' && global.Promise) {
+        return global.Promise;
+    }
 }
 
-if (!PromiseConstructor && typeof global !== 'undefined') {
-    PromiseConstructor = global.Promise;
+if (!Thenable) {
+    throw new TypeError('Native promise does not support in your environment. Use /out/api function directly');
 }
 
-if (!PromiseConstructor) {
-    throw new Error('Promise constructor not found. Use api function directly');
-}
-
-export default chromeApi(PromiseConstructor);
+/**
+ * @type {ThenChrome}
+ */
+export default create(Thenable);
