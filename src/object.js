@@ -3,8 +3,6 @@
  * @overview
  */
 
-'use strict';
-
 /**
  * Get nested object by path
  * @param {Object} object
@@ -13,10 +11,10 @@
  * @returns {Object|Null}
  */
 export function get(object, path, delimiter = '.') {
-    var [...keys] = path.split(delimiter);
+    var keys = path.split(delimiter);
     var data = object;
 
-    for (var i = 0, max = keys.length; i < max; i++) {
+    for (var i = 0; i < keys.length; i++) {
         var key = keys[i];
         if (!data[key]) {
             return null;

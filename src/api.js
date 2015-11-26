@@ -3,8 +3,6 @@
  * @overview
  */
 
-'use strict';
-
 import config from './config';
 import {wrapAsyncMethods, wrapSyncMethods} from './wrapper';
 import {get, set} from './object';

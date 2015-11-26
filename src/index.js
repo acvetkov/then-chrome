@@ -3,8 +3,6 @@
  * @overview
  */
 
-'use strict';
-
 import create from './api';
 
 const Thenable = getNativePromise();

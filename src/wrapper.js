@@ -3,8 +3,6 @@
  * @overview
  */
 
-'use strict';
-
 import {get} from './object';
 
 /**
