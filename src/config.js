@@ -252,7 +252,6 @@ export default {
         ]
     },
     omnibox: {
-        async: [],
         sync: ['setDefaultSuggestion']
     },
     pageAction: {

@@ -36,6 +36,8 @@ function createNamespace(obj, namespace) {
  * @param {Object} obj
  * @param {String} namespace
  * @param {Object} data
+ * @param {Array<String>} data.async
+ * @param {Array<String>} data.sync
  * @param {Function} Promise constructor
  * @returns {Object}
  */

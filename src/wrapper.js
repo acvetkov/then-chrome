@@ -142,6 +142,8 @@ function wrapSyncMethod(Thenable, namespace, method) {
 }
 
 /**
+ * For IE compatibility we can't use method.apply.
+ *
  * Function apply
  * @param {Function} method
  * @param {*} context
