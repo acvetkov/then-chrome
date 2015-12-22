@@ -2,7 +2,6 @@
 
 [![Build Status](https://travis-ci.org/acvetkov/then-chrome.svg?branch=master)](https://travis-ci.org/acvetkov/then-chrome)
 [![npm version](https://badge.fury.io/js/then-chrome.svg)](https://www.npmjs.com/package/then-chrome)
-[![Code Climate](https://codeclimate.com/github/acvetkov/then-chrome/badges/gpa.svg)](https://codeclimate.com/github/acvetkov/then-chrome)
 
 Promise-based [chrome api](https://developer.chrome.com/extensions/api_index#stable_apis).
 
