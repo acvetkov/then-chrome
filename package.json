@@ -1,18 +1,22 @@
 {
   "name": "then-chrome",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Promise wrapper for chrome api",
   "main": "out/index.js",
   "directories": {
     "test": "test"
   },
   "scripts": {
+    "clean": "rm -rf ./out/ && rm -rf ./coverage/",
     "test": "mocha --recursive --compilers js:babel/register --require ./test/setup.js",
+    "publish-test": "mocha --recursive --compilers js:babel/register --require ./test/setup.js --reporter mocha-tldr-reporter",
     "lint": "eslint ./src ./test && jscs ./src ./test",
-    "build": "npm run lint && npm run test && npm run babel",
-    "babel": "npm run clean && babel ./src --out-dir ./out",
-    "clean": "rm -rf ./out/",
-    "prepublish": "npm run build"
+    "build": "npm run transpile",
+    "transpile": "npm run clean && babel ./src --out-dir ./out",
+    "prepublish": "npm run lint && npm run publish-test && npm run build",
+    "coverage": "isparta cover _mocha -- --require babel/register --require ./test/setup.js --recursive -R mocha-lcov-reporter",
+    "precoveralls": "npm run coverage",
+    "coveralls": "coveralls < coverage/lcov.info"
   },
   "repository": {
     "type": "git",
@@ -38,6 +42,10 @@
     "lodash": "^3.10.1",
     "mocha": "^2.3.3",
     "sinon": "^1.17.2",
-    "sinon-chrome": "^1.1.0"
+    "sinon-chrome": "^1.1.0",
+    "coveralls": "^2.11.6",
+    "isparta": "^4.0.0",
+    "mocha-lcov-reporter": "^1.0.0",
+    "mocha-tldr-reporter": "^1.0.0"
   }
 }

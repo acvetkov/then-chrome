@@ -1,6 +1,7 @@
 ## then-chrome
 
 [![Build Status](https://travis-ci.org/acvetkov/then-chrome.svg?branch=master)](https://travis-ci.org/acvetkov/then-chrome)
+[![Coverage Status](https://coveralls.io/repos/acvetkov/then-chrome/badge.svg?branch=coverage&service=github)](https://coveralls.io/github/acvetkov/then-chrome?branch=coverage)
 [![npm version](https://badge.fury.io/js/then-chrome.svg)](https://www.npmjs.com/package/then-chrome)
 
 Promise-based [chrome api](https://developer.chrome.com/extensions/api_index#stable_apis).
