@@ -1,8 +1,3 @@
-/**
- * @author acvetkov@yandex-team.ru
- * @overview
- */
-
 import _ from 'lodash';
 import config from '../../src/config';
 

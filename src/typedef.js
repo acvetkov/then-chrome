@@ -1,8 +1,4 @@
 /**
- * @author acvetkov@yandex-team.ru
- */
-
-/**
  * @typedef Function ChromeThenable
  * @returns {Promise}
  */

@@ -1,8 +1,3 @@
-/**
- * @author acvetkov@yandex-team.ru
- * @overview
- */
-
 export default {
     alarms: {
         async: [

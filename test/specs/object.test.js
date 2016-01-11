@@ -1,8 +1,3 @@
-/**
- * @author acvetkov@yandex-team.ru
- * @overview
- */
-
 import {get, set} from '../../src/object';
 
 describe('object', function () {

@@ -1,8 +1,3 @@
-/**
- * @author acvetkov@yandex-team.ru
- * @overview
- */
-
 import {get} from './object';
 
 /**

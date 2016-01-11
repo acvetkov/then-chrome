@@ -1,9 +1,4 @@
 /**
- * @author acvetkov@yandex-team.ru
- * @overview
- */
-
-/**
  * Get nested object by path
  * @param {Object} object
  * @param {String} path

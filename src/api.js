@@ -1,8 +1,3 @@
-/**
- * @author acvetkov@yandex-team.ru
- * @overview
- */
-
 import config from './config';
 import {wrapAsyncMethods, wrapSyncMethods} from './wrapper';
 import {get, set} from './object';

@@ -1,8 +1,3 @@
-/**
- * @author acvetkov@yandex-team.ru
- * @overview
- */
-
 import chai from 'chai';
 import chrome from 'sinon-chrome';
 import sinon from 'sinon';

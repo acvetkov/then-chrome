@@ -1,8 +1,3 @@
-/**
- * @author acvetkov@yandex-team.ru
- * @overview
- */
-
 import create from './api';
 
 const Thenable = getNativePromise();

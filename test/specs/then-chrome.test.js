@@ -1,8 +1,3 @@
-/**
- * @author acvetkov@yandex-team.ru
- * @overview
- */
-
 import thenChrome from '../../src/index';
 import generateSpecs from '../generate/index';
 
