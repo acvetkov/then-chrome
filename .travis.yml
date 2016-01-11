@@ -9,6 +9,9 @@ install:
 after_success:
   - npm run coveralls
 
+before_deploy:
+  - npm run bundle
+
 deploy:
   # deploy to npm
   - provider: npm
