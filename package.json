@@ -1,6 +1,6 @@
 {
   "name": "then-chrome",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Promise wrapper for chrome api",
   "main": "out/index.js",
   "directories": {
