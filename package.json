@@ -1,6 +1,6 @@
 {
   "name": "then-chrome",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Promise wrapper for chrome api",
   "main": "out/index.js",
   "directories": {
@@ -8,8 +8,8 @@
   },
   "scripts": {
     "test": "mocha --recursive --compilers js:babel/register --require ./test/setup.js",
-    "code": "eslint ./src ./test && jscs ./src ./test",
-    "build": "npm run code && npm run test && npm run babel",
+    "lint": "eslint ./src ./test && jscs ./src ./test",
+    "build": "npm run lint && npm run test && npm run babel",
     "babel": "npm run clean && babel ./src --out-dir ./out",
     "clean": "rm -rf ./out/",
     "prepublish": "npm run build"
@@ -34,8 +34,6 @@
     "chai": "^3.4.0",
     "chai-as-promised": "^5.1.0",
     "eslint": "^1.7.3",
-    "eslint-config-airbnb": "^0.1.0",
-    "eslint-plugin-react": "^3.6.3",
     "jscs": "^2.2.1",
     "lodash": "^3.10.1",
     "mocha": "^2.3.3",
