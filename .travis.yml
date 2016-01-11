@@ -8,3 +8,22 @@ install:
 
 after_success:
   - npm run coveralls
+
+deploy:
+  # deploy to npm
+  - provider: npm
+    email: "aleksey.dmitrich@gmail.com"
+    skip_cleanup: true
+    on:
+      tags: true
+    api_key:
+      secure: "HdZOAGorRiMtbgjeqjr673LGGVJffoGhASOVwET8AY6gxvDFU/dmy6YaUmEYuDVGAnNCRPuzZC0lbomlanfF6BTwRJBsByU+6pSFl8VQfG3wPjV+4AN9y2MaKaqSFr5Girj8dV5o7h52hVrMS/XitR20iQ2OxN5FO4vkdefRlz1X/M3tdFkOjK0gT594qUm064OYSICsbYK27Y4p/CzX7tbosglk8d1EHO5c727+d9jIl5dw6yX5Sl++Lhc/hNVf9QJbiHsB7xfgdLzHEaP88R3nPjbsfAvZ1VkdG3dki2hW74imIQc+ic4LqlRvQ8m3p7BU8SE1cdYYmLizCSsPmxO1VXx5GTx5OmeFnyvvqMIX3D9J/W+F/71kajprcJALJPt+8SNOFfo7oaNQGrEm69XhrZFPFLLfsDR4vPizwznHIy6L2nlW6jnaYLQROaPo90hwK3+jM3aHIw40crZIbrRZjPnXXvTuGUioPU8Pbqer4btKHTawFjPuzhT1cPFyEpHqXk2um6FmRRtXCT+8xi/biNw3YXbtSI6XBGyu6V2VvnWGdn7bBC+x+71If0QqvWlgbo7ftxOhlWv65/pkDrz7xea4MxXpGPNu7cOimadtMSg/JgxpBBbsTHrdrP8rD47CENy1rQyUeU2w/HW4XKhdRMAkKEA2uoDEsH3aggs="
+
+  # deploy to github release
+  - provider: releases
+    skip_cleanup: true
+    on:
+      tags: true
+    api_key:
+      secure: "MWtM889J3okIAesS19XUAXpG+cbA130dSen2pVc6Zr25jUwJxZFGg/56H9wewRm21rsxgyduVy9SxsiKe+Pd/jf5GIkxfHG+pRY9CEIOkOe5sAVSyHAs92/q0hl+p+rPatLLVPAbHDPYRCo0CmliJyiTCRTqObhcjwNpTH8wAOIKepxdvDEv06JYS8KYH/V0HNGwchumLzqoBK3csgLJMi3vkcJwJyfT+lQONgsOuhqQ843dnADj8b1Iu4Ws+nEMRzm7jasaug1g8kecRojAkLcWkv+XFEJSCMn1CL1nPjkVDUvp5jYbkJupNM13Hsz2EZ0l1S140FoYSwv/6pkMJcWk9JqVaeYC2nVNUF+Y3HvJbMmzyBN9ENnHEZh3LV8vpPQ1NRnTWB+FmsVlYVOXn/2uuUj1uKvRY5s7Xw0gGZ8lgCDb4BFkRw5RsAXfEF9K6vLdb1B/fVytT964/yefjF29SM3Iy9b1hbNrnM/4GzyG6iwPKtAxGRs4Q7jAt1YPv9jPL5SMFMEPYpawKvWdBwpR0dz41QsRhyJWYPeEWrtOFmgiJ8WbHtrk2Wz7OLRBAaDc644G4Sf0x3A5qPtHnTm5f7oeAvBn5+GEpesHZkBQslplWTSHkFf6+0unBSre9Jo4WGDuJ85Zf+9TUCqugFOyhapR2Kaj8++XoJqrIyM="
+    file: "./dist/then-chrome.js"
