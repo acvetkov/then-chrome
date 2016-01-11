@@ -24,7 +24,7 @@ thenChrome.tabs.detectLanguage(10)
    .catch(console.warn); // catch chrome.runtime.lastError value
 ```
 
-Sycn methods are wrapped too
+Sync methods are wrapped too
 
 ```js
 var thenChrome = require('then-chrome');
