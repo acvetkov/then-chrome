@@ -112,7 +112,7 @@ export default {
         async: [
             'create',
             'setOpenResourceHandler',
-            'openResource '
+            'openResource'
         ]
     },
     downloads: {
@@ -346,6 +346,13 @@ export default {
         ]
     },
     'privacy.websites.thirdPartyCookiesAllowed': {
+        async: [
+            'get',
+            'set',
+            'clear'
+        ]
+    },
+    'proxy.settings': {
         async: [
             'get',
             'set',
