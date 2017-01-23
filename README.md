@@ -102,6 +102,7 @@ npm test
 26. [chrome.pageCapture](https://developer.chrome.com/extensions/pageCapture)
 27. [chrome.permissions](https://developer.chrome.com/extensions/permissions)
 28. [chrome.privacy](https://developer.chrome.com/extensions/privacy)
+28. [chrome.proxy](https://developer.chrome.com/extensions/proxy)
 29. [chrome.runtime](https://developer.chrome.com/extensions/runtime)
 30. [chrome.sessions](https://developer.chrome.com/extensions/sessions)
 31. [chrome.storage](https://developer.chrome.com/extensions/storage)

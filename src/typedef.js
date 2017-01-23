@@ -231,6 +231,10 @@
  * @property {ChromeThenable} privacy.websites.thirdPartyCookiesAllowed.set
  * @property {ChromeThenable} privacy.websites.thirdPartyCookiesAllowed.clear
  *
+ * @property {ChromeThenable} proxy.settings.get
+ * @property {ChromeThenable} proxy.settings.set
+ * @property {ChromeThenable} proxy.settings.clear
+ *
  * @property {ChromeThenable} runtime.getBackgroundPage
  * @property {ChromeThenable} runtime.openOptionsPage
  * @property {ChromeThenable} runtime.setUninstallURL
