@@ -53,7 +53,7 @@ function generateAsyncMethodSpecs(thenChrome, namespace, method) {
         });
 
         beforeEach(() => {
-            chrome.reset();
+            chromeMethod.resetHistory();
             chrome.runtime.lastError = undefined;
         });
 
@@ -134,7 +134,7 @@ function generateSyncMethodSpecs(thenChrome, namespace, method) {
         });
 
         beforeEach(() => {
-            chrome.reset();
+            chromeMethod.resetHistory();
         });
 
         after(function () {
