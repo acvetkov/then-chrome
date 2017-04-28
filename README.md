@@ -86,6 +86,7 @@ npm test
 10. [chrome.devtools.inspectedWindow](https://developer.chrome.com/extensions/devtools_inspectedWindow)
 11. [chrome.devtools.network](https://developer.chrome.com/extensions/devtools_network)
 12. [chrome.devtools.panels](https://developer.chrome.com/extensions/devtools_panels)
+13. [chrome.dial](https://chromium.googlesource.com/chromium/src.git/+/master/chrome/common/extensions/api/dial.idl) (undocumented API for communication with DIAL-capable devices)
 13. [chrome.downloads](https://developer.chrome.com/extensions/downloads)
 14. [chrome.extension](https://developer.chrome.com/extensions/extension)
 15. [chrome.fontSettings](https://developer.chrome.com/extensions/fontSettings)

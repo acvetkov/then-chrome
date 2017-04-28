@@ -82,6 +82,9 @@
  * @property {ChromeThenable} devtools.panels.setOpenResourceHandler
  * @property {ChromeThenable} devtools.panels.openResource
  *
+ * @property {ChromeThenable} dial.discoverNow
+ * @property {ChromeThenable} dial.fetchDeviceDescription
+ *
  * @property {ChromeThenable} downloads.download
  * @property {ChromeThenable} downloads.search
  * @property {ChromeThenable} downloads.pause

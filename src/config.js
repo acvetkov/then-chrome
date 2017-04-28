@@ -115,6 +115,12 @@ export default {
             'openResource'
         ]
     },
+    dial: {
+        async: [
+            'discoverNow',
+            'fetchDeviceDescription'
+        ]
+    },
     downloads: {
         async: [
             'download',
