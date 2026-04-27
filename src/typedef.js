@@ -1,5 +1,5 @@
 /**
- * @typedef Function ChromeThenable
+ * @typedef {Function} ChromeThenable
  * @returns {Promise}
  */
 
